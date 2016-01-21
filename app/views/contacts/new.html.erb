@@ -6,24 +6,6 @@
   <div class="otherpage_background" id="contact_background"></div>
   <a href=<%= root_path %>><div id="logo"></div></a>
   <div class="container otherpage_background_fix ">
-
-      
-  <!-- Logo -->
-    <!--<div id="logoText">-->
-      <!--<h1><a href=<%= root_path %>>BC Studio</a></h1>-->
-    <!--</div>-->
-  
-  <!-- Nav -->
-    <!--<nav id="nav">-->
-      <!--<ul>-->
-        <!--&lt;!&ndash; <li class="active"><a href="index.html">Homepage</a></li> &ndash;&gt;-->
-        <!--<li><%#= link_to "Graphic Design", home_design_path%></li>-->
-        <!--<li><%#= link_to "MKT Creatives", home_creatives_path%></li>-->
-        <!--<li><%#= link_to "Website", home_website_path%></li>-->
-        <!--<li><%#= link_to "Consultant", home_consultant_path%></li>-->
-        <!--<li class="active"><%= link_to "Contact", contacts_path%></li>-->
-      <!--</ul>-->
-    <!--</nav>-->
   </div>
 </div>
 <nav id="navGorizontal">
@@ -36,9 +18,12 @@
     <li class="active"><%= link_to t('contacts'), contacts_path%></li>
   </ul>
 </nav>
+
+
 <div >
   <%= image_tag 'main/contact-info.png', class: 'fullwidth-image' %>
 </div>
+
 <div>
   <div class="contacts-title">
     <div class="container vcenter">
@@ -54,65 +39,9 @@
   <div class="container ">
     <div class="row">
       <div class="col-md-5 col-md-offset-1 padding-tb-20" id="contacts-text">
-        <p>Please feel free to contact us or why not stay connected via our social networks.</p>
-        <p>
-          Your inquiries will be automatically sorted and delivered to the right location,
-          right department and right person. BC specialist will respond to your
-          inquiries within 24 hours.
-        </p><br/>
-
-        <p>
-          BC STUDIO: <br/><br/>
-
-          5800 Oakwood Dr Unit 1L<br/>
-          Lisle, IL 60532, USA.<br/><br/>
-        </p>
-        <div class="row" >
-          <div class="col-xs-3 col-sm-3 col-md-3">
-            <p>Tel USA:</p>
-          </div>
-          <div class="col-xs-9 col-sm-9 col-md-9">
-            <p>+ 1 312 9857969</p>
-          </div>
-        </div>
-        <div class="row" >
-          <div class="col-xs-3 col-sm-3 col-md-3">
-            <p>Tel Hungary:</p>
-          </div>
-          <div class="col-xs-9 col-sm-9 col-md-9">
-            <p>+ 36 30 4206508</p>
-          </div>
-        </div>
-        <div class="row" >
-          <div class="col-xs-3 col-sm-3 col-md-3">
-            <p>Tel Norway:</p>
-          </div>
-          <div class="col-xs-9 col-sm-9 col-md-9">
-            <p>+ 47 47 677213</p>
-          </div>
-        </div>
-        <div class="row" >
-          <div class="col-xs-3 col-sm-3 col-md-3">
-            <p>Tel Ukraine:</p>
-          </div>
-          <div class="col-xs-9 col-sm-9 col-md-9">
-            <p>+ 38 063 7531258</p>
-          </div>
-        </div>
-        <div class="row" >
-          <div class="col-xs-3 col-sm-3 col-md-3">
-            <p>Tel China:</p>
-          </div>
-          <div class="col-xs-9 col-sm-9 col-md-9">
-            <p>+ 86 13801096162</p>
-          </div>
-        </div>
-        </br>
-        <p>
-          Email:
-          <a href="mailto:info@bcstudio.biz">info@bcstudio.biz</a>
-        </p>
+        <%= render 'contacts/contact_us' %>
       </div>
+
       <div class="col-md-12 show-sm ">
         <h2 class="form-title">
           Inquiry Form
@@ -183,7 +112,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-1 col-md-5">
+      <div class="col-md-offset-1 col-md-10">
         <%= render 'contacts/core_team' %>
       </div>
     </div>
