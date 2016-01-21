@@ -1,0 +1,703 @@
+/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
+ 
+/* ==========================================================================
+HTML5 display definitions
+========================================================================== */
+ 
+/* * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3. */
+ 
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+/* * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3. */
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+/* * Prevents modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices. */
+audio:not([controls]) { display: none; height: 0; }
+/* * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
+* Known issue:no IE 6 support. */
+[hidden] { display: none; }
+/* ==========================================================================
+Base
+========================================================================== */
+/* * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+*    `em` units.
+* 2. Prevents iOS text size adjust after orientation change, without disabling
+*    user zoom. */
+ 
+html { font-size: 100%; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+-ms-text-size-adjust: 100%; /* 2 */ }
+/* * Addresses `font-family` inconsistency between `textarea` and other form
+* elements. */
+html, button, input, select, textarea { font-family: sans-serif; }
+/* * Addresses margins handled incorrectly in IE 6/7. */
+body { margin: 0; font-family: 'Lato', sans-serif; overflow-x: hidden; }
+html, body { width: auto !important; overflow-x: hidden !important; }
+/* ==========================================================================
+Links
+========================================================================== */
+/* * Addresses `outline` inconsistency between Chrome and other browsers. */
+ 
+a:focus { outline: thin dotted; }
+/* * Improves readability when focused and also mouse hovered in all browsers. */
+a:active, a:hover { outline: 0; }
+/* ==========================================================================
+Typography
+========================================================================== */
+/* * Addresses font sizes and margins set differently in IE 6/7.
+* Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome. */
+ 
+h1 { font-size: 2em; margin: 0.67em 0; }
+h2 { font-size: 1.5em; margin: 0.83em 0; }
+h3 { font-size: 1.17em; margin: 1em 0; }
+h4 { font-size: 1em; margin: 1.33em 0; }
+h5 { font-size: 0.83em; margin: 1.67em 0; }
+h6 { font-size: 0.75em; margin: 2.33em 0; }
+/* * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome. */
+abbr[title] { border-bottom: 1px dotted; }
+/* * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome. */
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+/* * Addresses styling not present in Safari 5 and Chrome. */
+dfn { font-style: italic; }
+/* * Addresses styling not present in IE 6/7/8/9. */
+mark { background: #ff0; color: #000; }
+/* * Addresses margins set differently in IE 6/7. */
+p, pre { margin: 1em 0; }
+/* * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome. */
+code, kbd, pre, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+/* * Improves readability of pre-formatted text in all browsers. */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+/* * Addresses CSS quotes not supported in IE 6/7. */
+q { quotes: none; }
+/* * Addresses `quotes` property not supported in Safari 4. */
+q:before, q:after { content: ''; content: none; }
+small { font-size: 75%; }
+/* * Prevents `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+/* ==========================================================================
+Lists
+========================================================================== */
+/* * Addresses margins set differently in IE 6/7. */
+ 
+dl, menu, ol, ul { margin: 1em 0; }
+dd { margin: 0 0 0 40px; }
+/* * Addresses paddings set differently in IE 6/7. */
+menu, ol, ul { padding: 0 0 0 0; }
+/* * Corrects list images handled incorrectly in IE 7. */
+nav ul, nav ol { list-style: none; list-style-image: none; }
+/* ==========================================================================
+Embedded content
+========================================================================== */
+/* * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+* 2. Improves image quality when scaled in IE 7. */
+ 
+img { border: 0; /* 1 */
+-ms-interpolation-mode: bicubic; /* 2 */ }
+/* * Corrects overflow displayed oddly in IE 9. */
+svg:not(:root) { overflow: hidden; }
+/* ==========================================================================
+Figures
+========================================================================== */
+/* * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11. */
+ 
+figure { margin: 0; }
+/* ==========================================================================
+Forms
+========================================================================== */
+/* * Corrects margin displayed oddly in IE 6/7. */
+ 
+form { margin: 0; }
+/* * Define consistent border, margin, and padding. */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+/* * 1. Corrects color not being inherited in IE 6/7/8/9.
+* 2. Corrects text not wrapping in Firefox 3.
+* 3. Corrects alignment displayed oddly in IE 6/7. */
+legend { border: 0; /* 1 */
+	padding: 0; white-space: normal; /* 2 */
+*margin-left: -7px; /* 3 */ }
+/* * 1. Corrects font size not being inherited in all browsers.
+* 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5, *    and Chrome.
+* 3. Improves appearance and consistency in all browsers. */
+button, input, select, textarea { font-size: 100%; /* 1 */
+	margin: 0; /* 2 */
+	vertical-align: baseline; /* 3 */
+*vertical-align: middle; /* 3 */ }
+/* * Addresses Firefox 3+ setting `line-height` on `input` using ` !important` in
+* the UA stylesheet. */
+button, input { line-height: normal; }
+/* * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*    and `video` controls.
+* 2. Corrects inability to style clickable `input` types in iOS.
+* 3. Improves usability and consistency of cursor style between image-type
+*    `input` and others.
+* 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+*    Known issue:inner spacing remains in IE 6. */
+button, html input[type="button"], /* 1 */
+input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */
+	cursor: pointer; /* 3 */
+*overflow: visible; /* 4 */ }
+/* * Re-set default cursor for disabled elements. */
+button[disabled], input[disabled] { cursor: default; }
+/* * 1. Addresses box sizing set to content-box in IE 8/9.
+* 2. Removes excess padding in IE 8/9.
+* 3. Removes excess padding in IE 7.
+*    Known issue:excess padding remains in IE 6. */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+	*height: 13px; /* 3 */
+*width: 13px; /* 3 */ }
+/* * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+* 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+*    (include `-moz` to future-proof). */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */
+	-moz-box-sizing: content-box; -webkit-box-sizing: content-box; /* 2 */
+box-sizing: content-box; }
+/* * Removes inner padding and search cancel button in Safari 5 and Chrome
+* on OS X. */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+/* * Removes inner padding and border in Firefox 3+. */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+/* * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+* 2. Improves readability and alignment in all browsers. */
+textarea { overflow: auto; /* 1 */
+vertical-align: top; /* 2 */ }
+/* ==========================================================================
+Tables
+========================================================================== */
+/* * Remove most spacing between table cells. */
+ 
+table { border-collapse: collapse; border-spacing: 0; }
+/* * Remove most spacing between table cells. */
+/* ==========================================================================
+Headings
+========================================================================== */
+h1.chain { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/cog-icon.png') no-repeat top center; padding-top: 85px; padding-bottom: 10px;}
+h1.home-icon-1 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/home-1-icon.png') no-repeat top center; padding-top: 85px; padding-bottom: 10px;}
+h1.design-1 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/design-1-icon.png') no-repeat top center; padding-top: 85px; padding-bottom: 10px;}
+h1.design-2 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/design-2-icon.png') no-repeat top center; padding-top: 85px; padding-bottom: 10px;}
+h1.creative-1 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/creative-1-icon.png') no-repeat top center; padding-top: 85px; padding-bottom: 10px;}
+h1.chain-website {padding-top: 54px!important;}
+h1.frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/frame-icon.png') no-repeat top center; padding-top: 85px; padding-bottom: 10px;}
+h1.cons-1 { 
+  text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; padding-bottom: 10px;
+  span {
+    font-size: 80%;
+    color: #C3C3D2;
+    text-transform: none;
+    letter-spacing: initial;
+    font-weight: 100;
+  }
+}
+h2.chain { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/cog-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 17px; }
+h2.chain-cons { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 601; background: image-url('main/chain-icon.png') no-repeat top center; padding-top: 55px; padding-bottom: 10px; margin-top: 17px; }
+h2.cons-2 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 601; background: image-url('main/cons-2-icon.png') no-repeat top center; padding-top: 55px; padding-bottom: 10px; margin-top: 17px; }
+h2.cons-3 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/cons-3-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.cons-4 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/cons-4-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 17px; }
+h2.cons-5 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/cons-5-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/frame-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 30px; }
+h2.home-icon-2 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/home-2-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 30px; }
+h2.home-icon-3 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/home-3-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.home-icon-4 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/home-4-icon.png') no-repeat top center; padding-top: 74px; padding-bottom: 10px; margin-top: 70px; }
+h2.creative-2 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/creative-2-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 30px; }
+h2.creative-3 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/creative-3-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.creative-4 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/creative-4-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.mech { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/mech-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.website-1 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/website-1-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.website-2 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/website-2-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 17px; }
+h2.website-3 { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/website-3-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.front-frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/front-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.scales { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: image-url('main/scales-icon.png') no-repeat top center; padding-top: 75px; padding-bottom: 10px; margin-top: 70px; }
+h2.twitter-post-username { color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; margin-top: 30px; }
+h2.twitter-post-username span { color: #848789; font-weight: 300; }
+h2.logo-header { text-align: center; color: #848789; letter-spacing: 1px; font-size: 24px; font-weight: 300; background: image-url("main/main-logo.png") no-repeat top center; padding-top: 120px; margin: 70px 0 40px 0; font-style: italic; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+/* ==========================================================================
+User Styles
+========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/* ==========================================================================
+Mixin TODO
+========================================================================== */
+@mixin no-transition {
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: color 0 ease-in;
+	transition: none;
+}
+
+/* ==========================================================================
+User Styles
+========================================================================== */
+.content {display: none;}
+.mouse-pointer {cursor: pointer;}
+.left-margin {text-align: left; margin-left: 70px;}
+.padding-top-sm { padding: 35px 0;}
+.padding-top { padding: 75px 0;}
+.padding-top-big { padding: 120px 0;}
+.padding-top-bottom { padding: 10px 70px;}
+.padding-tb-100 {padding: 100px 0;}
+.padding-tb-20 {padding: 20px 0;}
+.padding-bottom-75 { padding-bottom: 75px;}
+.margin-top-25 {margin-top: 25px;}
+.nav-bar {padding-left: 90px; }
+.nav-bar li {line-height: 30px; }
+.fixed-ul-1 {width: 82%; margin-left: auto; margin-right: auto;}
+.fixed-ul-2 {width: 82%; margin-left: auto; margin-right: auto;}
+.fixed-ul-3 {width: 260px; margin-left: auto; margin-right: auto;}
+.make-block {display: none;}
+.just-redline {text-indent: 1.6em; text-align: justify;}
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.pullcontainer a#pull { display: none; }
+a { color: #282f35; -webkit-transition: all .25s ease; -moz-transition: all .25s ease; -ms-transition: all .25s ease; -o-transition: all .25s ease; transition: all .25s ease; }
+a:hover { color: #64c29e; text-decoration: none; }
+p { text-align: center; font-size: 14px; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.8em; margin-top: 25px; }
+p.text-intro { font-size: 14px; }
+p.text-normal { font-size: 16px; }
+p.text-small { font-size: 13px; }
+//ul.inline-list {
+//
+//	text-align: center;
+//	li {
+//		margin-left: 20px;
+//		display: inline-block;
+//	}
+//}
+ul.inline-list {
+	color: #848789;
+	text-align: center;
+	li {
+		list-style: none;
+
+		display: inline-block;
+		&:before {
+			content: '\2022';
+			margin-right: 0.5em;
+		}
+		&:not(:first-child) {
+			margin-left: 20px;
+		}
+	}
+
+}
+.text-intro-width-80 {width: 80%; margin: 0 auto;}
+.text-list-for-home-consultant {width: 8.3em; margin: 0 auto;}
+.text-list-for-mkt-adv {width: 13.3em; margin: 0 auto;}
+.text-list-for-mkt-online {width: 16.3em; margin: 0 auto;}
+.text-list-for-mkt-branding {width: 17.3em; margin: 0 auto;}
+.text-list-for-cons-mktstrategy {width: 18.3em; margin: 0 auto;}
+.text-list-for-cons-finance {width: 10.3em; margin: 0 auto;}
+.text-list-for-cons-legal {width: 16.3em; margin: 0 auto;}
+.text-list-for-cons-fund1 {width: 34.3em; margin: 0 auto;}
+.text-list-for-cons-fund2 {width: 34.3em; margin: 0 auto;}
+.text-list-for-website-1 {width: 18.3em; margin: 0 auto;}
+.text-list-for-website-2 {width: 20.3em; margin: 0 auto;}
+.text-list-for-website-3 {width: 18.3em; margin: 0 auto;}
+.text-18 { p,ul,li{font-size: 18px!important;} }
+.text-16 { p,ul,li{font-size: 16px!important;} }
+.text-14 { p,ul,li{font-size: 14px!important;} }
+.hero { background: image-url('main/hero-bg.jpg') no-repeat top center #f4f5fc; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 685px; }
+nav { height: 85px; margin-top: 30px; position: relative; }
+.logo-holder { background: image-url("main/main-logo.png") no-repeat center center; width: 270px; height: 72px; position: absolute; top: 0; left: 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.responsive-logo { display: hidden; }
+header { background-color: #f4f5fc; }
+header ul { padding-top: 35px; }
+header ul li { list-style: none; float: left; text-transform: uppercase; letter-spacing: 2px; font-size: 13px}
+header ul li a { display: block; margin: 0 20px; color: #4d4959; }
+.r_spacer { margin-right: 180px; }
+.l_spacer { left: 0; }
+.intro { padding: 115px 0; background-color: #fbfbfb; }
+.small-intro { padding: 65px 0; background-color: #fbfbfb; }
+.faq { padding: 100px 0; background-color: #fbfbfb; }
+.products { padding: 115px 0; background-color: #fbfbfb; }
+.responsive-column {background-repeat: no-repeat; background-position: center center; height: 0; padding: 0; padding-bottom: 40%;background-size: 100%; position: relative; color: #848789;}
+.responsive-column-text {background-repeat: no-repeat; background-position: center center; height: 0; padding: 0; padding-bottom: 40%;background-size: 100%; position: relative; color: #848789;}
+.section-1 { background: image-url('main/left-box-1.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-1-cons { background: image-url('main/left-box-1-cons.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-1-mark { background: image-url('main/left-box-1-mark.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-2 { background: image-url('main/left-box-2.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-2-cons { background: image-url('main/big-1.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-2-mark { background: image-url('main/left-box-2-mark.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-3 { background: image-url("main/left-big-1.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-3-cons { background: image-url('main/left-box-3-cons.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-3-mark { background: image-url("main/left-big-1-mark.png") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-4 { background: image-url("main/left-big-2.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; }
+.section-4-cons { background: image-url("main/left-big-2-cons.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; }
+.section-4-mark { background: image-url("main/left-big-2-mark.png") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; }
+.section-1-big {background: image-url("main/big-1.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px;}
+.section-text { position: relative; height: 600px; }
+.section-text-big { position: relative; height: 700px;}
+.section-web-1 { background-image: image-url('website/website01.jpg');}
+.section-web-2 { background-image: image-url('website/website02.jpg');}
+.section-web-3 { background-image: image-url('website/website03.jpg');}
+
+.nopadding { padding: 0 !important; margin: 0 !important; }
+.thin-sep { height: 1px; background-color: #d7d7d7; width: 50px; margin: 8% auto 0 auto; }
+.small-featured-img { height: 200px; width: 100%; position: absolute; bottom: 0; }
+.section-small-1 { background: image-url('main/left-small-1.gif') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-small-1-cons { background: image-url('main/left-small-1-cons.gif') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-small-1-mark { background: image-url('main/left-small-1-mark.gif') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-small-2 { background: image-url('main/left-small-2.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-small-2-cons { background: image-url('main/left-small-2-cons.gif') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-small-2-mark { background: image-url('main/left-small-2-mark.gif') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-small-3 { background: image-url('main/left-small-3.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-small-3-cons { background: image-url('main/left-small-3-cons.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-small-3-mark { background: image-url('main/left-small-3-mark.gif') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-small-4-cons { background: image-url('main/left-small-4-cons.gif') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.section-text, .section-text-big p { padding: 0 60px; text-align: justify; }
+.section-text, .section-text-big ul {padding: 0 60px; text-align: justify; margin: 10px 0; font-size: 14px; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.5em;}
+.arrow { background: image-url('main/arrow.png') no-repeat center center; width: 21px; height: 10px; margin: -1px auto 0 auto; }
+.logo-1 { width: 118px; height: 118px; background: image-url('main/bicycle-logo.png'); position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -59px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-cons-1 { width: 134px; height: 118px; background: image-url('main/cons01.png'); position: absolute; left: 28%; top: 66%; margin-left: -77px; margin-top: -59px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-1-right { width: 76px; height: 76px; background: image-url('main/bicycle-logo.png'); position: absolute; left: 85%; top: 75%; margin-left: -38px; margin-top: -38px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-2 { width: 150px; height: 92px; background: image-url('main/vintage-logo.png'); position: absolute; left: 50%; top: 50%; margin-top: -45px; margin-left: -75px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-cons-2 { width: 150px; height: 120px; background: image-url('main/cons02.png'); position: absolute; left: 50%; top: 50%; margin-top: -60px; margin-left: -75px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-3 { width: 150px; height: 130px; background: image-url('main/fundraising-logo.png'); position: absolute; left: 50%; top: 50%; margin-left: -75px; margin-top: -65px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-cons-3 { width: 134px; height: 118px; background: image-url('main/cons03.png'); position: absolute; left: 82%; top: 79%; margin-left: -77px; margin-top: -59px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-4 { width: 150px; height: 130px; background: image-url('main/financial-logo.png'); position: absolute; left: 50%; top: 50%; margin-left: -75px; margin-top: -65px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-cons-4 { width: 150px; height: 120px; background: image-url('main/cons04.png'); position: absolute; left: 50%; top: 50%; margin-left: -75px; margin-top: -60px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-5 { width: 140px; height: 112px; background: image-url('main/business-strategy-logo.png'); position: absolute; left: 50%; top: 50%; margin-left: -70px; margin-top: -56px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-cons-5 { width: 150px; height: 120px; background: image-url('main/cons05.png'); position: absolute; left: 50%; top: 50%; margin-left: -75px; margin-top: -60px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-6 { width: 128px; height: 84px; background: image-url('main/creative-advertisement-logo.png'); position: absolute; left: 60%; top: 36%; margin-left: -64px; margin-top: -42px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-cons-6 { width: 150px; height: 86px; background: image-url('main/cons06.png'); position: absolute; left: 24%; top: 8%; margin-left: -75px; margin-top: -43px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-7 { width: 150px; height: 130px; background: image-url('main/creative-branding-logo.png'); position: absolute; left: 78%; top: 84%; margin-left: -75px; margin-top: -65px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-8 { width: 150px; height: 130px; background: image-url('main/media-logo.png'); position: absolute; left: 78%; top: 87%; margin-left: -75px; margin-top: -65px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.logo-9 { width: 96px; height: 92px; background: image-url('main/online-marketing-logo.png'); position: absolute; left: 84%; top: 82%; margin-top: -46px; margin-left: -48px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.flex-container { background-color: #f7f7f7; padding: 125px 0 35px; text-align: center; }
+.flex-twitter-icon { width: 32px; height: 27px; background: image-url('main/twitter-bird.png') no-repeat center center; margin: 0 auto; }
+p.twitter-post { color: #848789; font-size: 24px; font-style: italic; font-weight: 300; margin-bottom: 100px; }
+.left-box-1 { width: 50%; float: left; }
+.left-box-2 { width: 50%; float: right; }
+.left-box-btm { width: 100%; }
+.left-box-1 img, .left-box-2 img, .left-box-btm img { width: 100%; }
+.mid-box-1 { width: 50%; float: left; }
+.mid-box-2 { width: 50%; float: right; }
+.mid-box-1 img { width: 100%; height: 100%; }
+.mid-box-2 img { width: 100%; height: 100%; }
+.right-box-1 { width: 100%; }
+.right-box-2 { width: 50%; float: left; }
+.right-box-3 { width: 50%; float: right; }
+.right-box-3 img, .right-box-2 img, .right-box-1 img { width: 100%; }
+.effects { background-color: white; }
+.effects .img { position: relative; }
+.effects .img img { display: block; margin: 0; padding: 0; max-width: 100%; height: auto; }
+.overlay { z-index: 10 }
+a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 20; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
+a.close-overlay.hidden { display: none }
+#effect .overlay { position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background: rgba(100, 194, 158, 0.8); opacity: 0; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+#effect .overlay a.expand { position: absolute; left: 0; right: 0; top: 0; content: ""; margin: 0 auto; border-radius: 30px; text-align: center; color: #fff; line-height: 50px; font-weight: 600; font-size: 14px; opacity: 0; text-transform: uppercase; letter-spacing: 3px; background: image-url('main/white-bike-icon.png') no-repeat top center; padding-top: 25px; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block; }
+#effect .overlay a.expand-compass {background: image-url('main/compass-icon.png') no-repeat top center;padding-top: 33px;}
+#effect .img { overflow: hidden }
+#effect .img.hover .overlay { opacity: 1 }
+#effect .img.hover .overlay a.expand { top: 50%; margin-top: -30px; opacity: 1; }
+.overlay-pink {background: rgba(131, 67, 81, 0.8)!important;}
+.overlay-lightgray {background: rgba(206, 205, 203, 0.8)!important;}
+.overlay-darkgray {background: rgba(119, 122, 130, 0.8)!important;}
+.overlay-lightblue {background: rgba(151, 201, 208, 0.8)!important;}
+.overlay-blue {background: rgba(71, 139, 148, 0.8)!important;}
+.discover { background-color: #282f35; padding: 70px 0; text-align: center; }
+.shop-btn { border: solid 1px #bbb; padding: 15px 50px; color: #fff; text-transform: uppercase; letter-spacing: 3px; font-weight: 400; }
+.shop-btn:hover, .shop-btn:focus { border: solid 1px #64c29e; }
+.sign-up { text-align: center; }
+.signup-input { border: solid 1px #d3d7d9; padding: 25px; width: 65%; color: #929292; font-style: italic; letter-spacing: 1px; }
+.submit-btn { background-color: #64c29e; color: #fff; border: solid 1px #64c29e; font-weight: 300; padding: 25px 50px; }
+section.sign_up { padding: 40px 0 110px 0; }
+footer { background-color: #777678; padding: 30px 0;}
+footer p { font-size: 13px; margin: 0;  color: antiquewhite}
+.footer-leftcol p { text-align: left; }
+.footer-rightcol p { text-align: right; font-style: italic; margin-top: 20px; }
+.bold-16p { font-size: 15px; font-weight: 600; }
+.contact-sm {padding-left: 0!important; ul {text-align: left!important}}
+.footer-midcol { margin-left: auto; margin-right: auto; float: right; }
+.footer-midcol ul { text-align: center; padding: 0; }
+.footer-midcol li { list-style: none; display: inline-block; margin-right: 15px; }
+.footer-midcol li a { @include no-transition; opacity: 1; }
+.footer-midcol li a:hover { opacity: 0.5; }
+//.vimeo-icon { background: image-url('main/icons/vimeo-icon.png'); height: 38px; width: 39px; display: block; text-indent: -9999px;
+//	&:hover{
+//		background: image-url('main/icons/vimeo-icon-hover.png');
+//	}
+//}
+//.twitter-icon { background: image-url('main/icons/twitter-icon.png'); height: 38px; width: 39px; display: block; text-indent: -9999px;
+//	&:hover{
+//		background: image-url('main/icons/twitter-icon-hover.png');
+//	}
+//}
+//.facebook-icon { background: image-url('main/icons/facebook-icon.png'); height: 38px; width: 39px; display: block; text-indent: -9999px;
+//	&:hover{
+//		background: image-url('main/icons/facebook-icon-hover.png');
+//	}
+//}
+//.pinterest-icon { background: image-url('main/icons/pinterest-icon.png'); height: 38px; width: 39px; display: block; text-indent: -9999px;
+//	&:hover{
+//		background: image-url('main/icons/pinterest-icon-hover.png');
+//	}
+//}
+
+.social-icon {
+	background: image-url('main/icons/social-icons.png') no-repeat;
+	display: block;
+	text-indent: -9999px;
+}
+
+.facebook-icon {
+	width: 41px;
+	height: 44px;
+	background-position: -3px -3px;
+	&:hover {
+		background-position: -50px -3px;
+	}
+}
+
+.pinterest-icon {
+	width: 43px;
+	height: 42px;
+	background-position: -97px -3px;
+	&:hover {
+		background-position: -146px -3px;
+	}
+}
+
+.twitter-icon {
+	width: 39px;
+	height: 42px;
+	background-position: -195px -3px;
+	&:hover {
+		background-position: -240px -3px
+	}
+}
+
+.vimeo-icon {
+	width: 41px;
+	height: 41px;
+	background-position: -285px -3px;
+	&:hover {
+		background-position: -332px -3px;
+	}
+}
+
+.icon-vk {
+  background-image: image-url('main/icons/vk.svg');
+  height: 40px;
+  width: 40px;
+  display: block;
+  background-size: cover;
+  text-indent: -9999px;
+  &:hover {
+    background-image: image-url('main/icons/vk-hover.svg');
+  }
+}
+
+.icon-fb {
+  background-image: image-url('main/icons/fb.svg');
+  height: 40px;
+  width: 40px;
+  display: block;
+  background-size: cover;
+  text-indent: -9999px;
+  &:hover {
+    background-image: image-url('main/icons/fb-hover.svg');
+  }
+}
+
+.icon-pinterest {
+  background-image: image-url('main/icons/pinterest.svg');
+  height: 40px;
+  width: 40px;
+  display: block;
+  background-size: cover;
+  text-indent: -9999px;
+  &:hover {
+    background-image: image-url('main/icons/pinterest-hover.svg');
+  }
+}
+
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9, .wp10, .wp11, .wp12 { visibility: hidden; }
+.bounceInLeft, .bounceInRight, .fadeInUp { visibility: visible; }
+/* CSS used here will be applied after bootstrap.css */
+.products {
+	.productbox { position: relative; border: 1px solid #ddd; border-radius: 4px; -webkit-transition: all .2s ease-in-out; }
+	.caption { padding:10px; background-color:rgba(0,0,0,0.7); position: absolute; bottom: 0; width: 100%; max-height: 40%; overflow: hidden; font-size: 11px; color: #FFF; }
+	.finalprice { font-size:15px; color: #AAFCAE;}
+	h5 { margin-top: 0px; color: white; max-height: 30px; overflow: hidden; }
+	.img-responsive img{ width: 100%; }
+	.container { width: 100%;}
+	.btn-block { margin-top: 5px;}
+	.saleoffrate{position: absolute; top:10px; left: 10px; padding-top: 13px; text-align:center; background-color: rgba(76, 174, 76,0.8); color: #FFFFFF; border-radius: 50%; height: 50px; width: 50px; line-height: 13px; }
+	@media (min-width: 384px) and (max-width: 768px) {
+	  .img-responsive img{
+	      max-width: 50%;
+	  }
+	  .img-responsive{
+	      text-align: center;
+	  }
+	}
+}
+.faqHeader {
+    font-size: 27px;
+    margin: 20px;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'Glyphicons Halflings';
+    content: "e072"; /* "play" icon */
+    float: right;
+    color: #F58723;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #454444;
+}
+.contacts-title {
+	background-color: white;
+	height: 80px;
+	color: #00B191;
+	font-size: 2em;
+}
+.vcenter {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.dont-click-left {
+	text-align: left;
+	padding-top: 1em;
+	font-size: smaller;
+}
+.fundraising-text p,
+.fundraising-text ul {
+	text-align: left;
+	font-size: 12px;
+	padding: 0 45px;
+	line-height: 1.5em;
+}
+/* ==========================================================================
+Contact us page
+========================================================================== */
+
+.form-title {
+	color: #646464;
+}
+
+/* ==========================================================================
+CSS Queries
+========================================================================== */
+
+@media screen and (max-width:991px) {
+    .section-text {height: 700px; }
+    .section-text-big {height: 450px; }
+    .fixed-ul-1 {width: 500px; }
+    .fixed-ul-2 {width: 420px; }
+    .small-screen-height-1 {height: 300px!important;}
+    nav { height: auto; width: 100%; background: none;}
+//    .nav-wrapper { background-color: #fff; }
+    #nav ul {background: rgba(175,121,121,0.88);}
+    nav ul { width: 100%; display: block; height: auto; padding: 0;background: none }
+//    nav li { width: 100%; float: left; position: relative; text-align: center; }
+//    nav ul li a { width: 100%; float: left; position: relative; padding: 25px 0; text-align: center; border-bottom: 1px dotted rgba(255, 255, 255, 0.2); margin: 0px; }
+    nav ul li a.last { border-bottom: none; }
+    nav ul li.dot { display: none; }
+  .homepage_background_fix {top: 35%; }
+  .otherpage_background_fix {top: 35%; }
+  .otherpage_background {height: 350px; }
+  .nav-bar {padding-left: 0px; }
+  p{font-size: 14px; }
+  .thin-sep { display: none; }
+  .arrow { display: none; }
+
+  .col-md-2,.col-md-10 {width: 100%!important;}
+  .footer-leftcol p, .footer-rightcol p { text-align: center; }
+  .footer-midcol ul { margin-top: 40px; }
+  .submit-btn { margin-top: 10px; }
+  .make-block {display: block; height: 100px; }
+	.text-list-for-home-consultant {width: 8.3em; margin: 0 auto;}
+	.text-list-for-mkt-adv {width: 13.3em; margin: 0 auto;}
+	.text-list-for-mkt-online {width: 16.3em; margin: 0 auto;}
+	.text-list-for-mkt-branding {width: 17.3em; margin: 0 auto;}
+	.text-list-for-cons-mktstrategy {width: 18.3em; margin: 0 auto;}
+	.text-list-for-cons-finance {width: 10.3em; margin: 0 auto;}
+	.text-list-for-cons-legal {width: 16.3em; margin: 0 auto;}
+	.text-list-for-cons-fund1 {width: auto; margin: 0 auto;}
+	.text-list-for-cons-fund2 {width: auto; margin: 0 auto;}
+	.text-list-for-website-1 {width: 18.3em; margin: 0 auto;}
+	.text-list-for-website-2 {width: 20.3em; margin: 0 auto;}
+	.text-list-for-website-3 {width: 18.3em; margin: 0 auto;}
+	.responsive-column {padding-bottom: 60%;}
+	.responsive-column-text {height: auto;	padding: 0 0 20px 0;}
+	.small-featured-img { height: 400px; width: 100%; position: absolute; bottom: 0; }
+	.hide-sm {display: none;}
+
+}
+/* pull-right on all except xs devices */
+@media (min-width: 992px) {
+	.pull-right-sm {
+		float: right!important;
+	}
+	.pull-left-sm {
+		float: left;
+	}
+	.show-sm {display: none; }
+}
+/*********************************************************************************/
+/* 720px and less                                                            	 */
+/*********************************************************************************/
+@media screen and (max-width:720px) {
+	.homepage_background { height: 350px; }
+	.otherpage_background {	height: 300px;}
+	.text-cons-1 {	height: 720px;}
+}
+/*********************************************************************************/
+/* 640px and less                                                            	 */
+/*********************************************************************************/
+@media screen and (max-width:640px) {
+	.shop-btn { padding: 15px 25px; font-size: 10px; }
+	.homepage_background { height: 300px; }
+	.otherpage_background {	height: 250px;}
+	#navGorizontal ul li a {font-size: 1em;}
+	.text-cons-1 {	height: 740px;}
+	.footer-midcol {float: none; }
+}
+/*********************************************************************************/
+/* 480px and less                                                            	 */
+/*********************************************************************************/
+@media screen and (max-width:480px) {
+	.text-cons-1 {	height: 750px;}
+}
+/*********************************************************************************/
+/* 360px and less                                                            	 */
+/*********************************************************************************/
+@media screen and (max-width:360px) {
+	.text-cons-1 {	height: 820px;}
+	#navGorizontal ul li {width: 100%;}
+}
+/*********************************************************************************/
+/* 320px and less                                                            	 */
+/*********************************************************************************/
+@media screen and (max-width:320px) {
+	.section-text {	height: 720px;}
+	.text-list-for-website-1 {width: 16.3em;}
+	.text-list-for-website-2 {width: 16.3em;}
+	.text-list-for-website-3 {width: 16.3em;}
+	.text-list-for-cons-mktstrategy {width: 16.3em;}
+	.text-cons-1 {	height: 860px;}
+}

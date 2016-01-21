@@ -1,0 +1,8 @@
+<IfModule mod_passenger.c>username
+Options -MultiViews
+PassengerResolveSymlinksInDocumentRoot on
+#Set this to whatever environment you’ll be running in
+RailsEnv production
+RackBaseURI /
+SetEnv GEM_HOME /home4/gmmobiz/ruby/gems
+</IfModule>

@@ -1,0 +1,166 @@
+<div id="homepage_header">
+	<%= render :partial => 'layouts/header' %>
+</div>
+
+<div class="container-fluid intro" id="about">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h1 class="home-icon-1 pointer" onclick="location.assign('<%= bonus_path %>');"><%= t('about') %></h1>
+			<h2 class="dont-click-a pointer" onclick="location.assign('<%= bonus_path %>');">Don’t Ever Click Here</h2>
+			<p class="text-intro"><%= link_to home_design_path do %><%= t('our-target') %><% end %></p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<%= link_to home_design_path do %>
+			<div class="col-md-8 section-1 nopadding" id="work">
+				<div class="logo-1-right wp1"></div>
+			</div>
+		<% end %>
+
+		<div class="col-md-4 section-text nopadding">
+			<div class="wp4">
+				<h2 class="home-icon-2"><%= link_to home_design_path do %>DESIGNS<% end %></h2>
+				<p class="text-justify text-intro-width-80 "><%= link_to home_design_path do %>Creativity is more than just being
+                  different… We see recent trend as making the simple, awesomely simple,
+                  that is creativity. <% end %></p>
+				<div class="thin-sep"></div>
+			</div>
+			<%= link_to home_design_path do %>
+				<div class="small-featured-img section-small-1">
+					<div class="arrow"></div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 section-text nopadding">
+			<div class="wp5">
+				<h2 class="home-icon-3"><%= link_to home_creatives_path do %>MARTKETING CREATIVES<% end %></h2>
+				<p class="text-intro"><%= link_to home_creatives_path do %>Cow, Cow, Cow … PINK COW! <% end %></p>
+                <p class="text-intro"><%= link_to home_creatives_path do %>Car, Car, Car … Camel! <% end %></p>
+                <p class="text-intro"><%= link_to home_creatives_path do %>That's how we do it...<% end %></p>
+				<div class="thin-sep"></div>
+			</div>
+			<%= link_to home_creatives_path do %>
+				<div class="small-featured-img section-small-2">
+					<div class="arrow"></div>
+				</div>
+			<% end %>
+		</div>
+		<%= link_to home_creatives_path do %>
+			<div class="col-md-8 section-2 nopadding">
+				<div class="logo-2 wp2"></div>
+			</div>
+		<% end %>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<%= link_to home_consultant_path do %>
+				<div class="col-md-4 section-3">
+					<div class="logo-3 wp3"></div>
+				</div>
+			<% end %>
+			<div class="col-md-4 section-text nopadding">
+				<div class="wp6">
+					<h2 class="home-icon-4"><%= link_to home_consultant_path do %>CONSULTING<% end %></h2>
+					<p class="text-intro"><%= link_to home_consultant_path do %>See what the other don’t see<% end %></p>
+	                <ul class="text-list-for-home-consultant">
+	                    <li><%= link_to home_consultant_path do %>Fund Raising<% end %></li>
+	                    <li><%= link_to home_consultant_path do %>Financial Analysis<% end %></li>
+	                    <li><%= link_to home_consultant_path do %>Business Strategy<% end %></li>
+	                </ul>
+					<div class="thin-sep"></div>
+				</div>
+				<%= link_to home_consultant_path do %>
+					<div class="small-featured-img section-small-3">
+		        <div class="wp7 logo-5"></div>
+						<div class="arrow"></div>
+					</div>
+				<% end %>
+			</div>
+			<%= link_to home_consultant_path do %>		
+				<div class="col-md-4 section-4">
+		          <div class="wp8 logo-4"></div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+	<div class="dontclick-fly pointer"  onclick="location.assign('<%= bonus_path %>');"></div>
+</div>
+
+<script>
+  window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+      fly();
+    } else {
+      flyReset();
+    }
+  };
+  function fly() {
+    var flyDiv = $('.dontclick-fly');
+    $('.dontclick-fly').show();
+    $('.dontclick-fly').animate({
+      left: '23%',
+      bottom: '200px'
+    }, 2500, 'linear').animate({
+      left: '48%',
+      bottom: '100px'
+    }, 2500, 'linear').animate({
+      left: '90%',
+      bottom: '50px'
+    }, 2500, 'linear', function() {
+      $('.dontclick-fly').stop(true, true);
+    });
+  }
+
+  function flyReset() {
+    var flyDiv = $('.dontclick-fly');
+    $('.dontclick-fly').hide();
+    $('.dontclick-fly').stop(true, true);
+    $('.dontclick-fly').css({
+      left: '0',
+      bottom: '0'
+    });
+  }
+  
+</script>
+<!--<section class="flex-container">-->
+	<!--<div class="container">-->
+		<!--<div class="row">-->
+			<!--<div class="col-md-12">-->
+				<!--<div class="flexslider">-->
+					<!--<ul class="slides">-->
+						<!--<li>-->
+							<!--<div class="flex-twitter-icon"></div>-->
+							<!--<h2 class="twitter-post-username">-->
+							<!--<a href="#">AOS New York @aod</a> <span>/ 35 min</span>-->
+							<!--</h2>-->
+							<!--<p class="twitter-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>-->
+						<!--</li>-->
+						<!--<li>-->
+							<!--<div class="flex-twitter-icon"></div>-->
+							<!--<h2 class="twitter-post-username">-->
+							<!--<a href="#">AOS New York @aod</a> <span>/ 35 min</span>-->
+							<!--</h2>-->
+							<!--<p class="twitter-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. </p>-->
+						<!--</li>-->
+						<!--<li>-->
+							<!--<div class="flex-twitter-icon"></div>-->
+							<!--<h2 class="twitter-post-username">-->
+							<!--<a href="#">AOS New York @aod</a> <span>/ 35 min</span>-->
+							<!--</h2>-->
+							<!--<p class="twitter-post">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor.</p>-->
+						<!--</li>-->
+					<!--</ul>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</section>-->
+
+<%#= render :partial => 'home/products_main' %>
+

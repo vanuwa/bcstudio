@@ -1,0 +1,62 @@
+ru:
+  en: "En"
+  ru: "Ru"
+  design: "ГРАФИЧЕСКИЙ ДИЗАЙН"
+  creative: "КРЕАТИВНЫЙ МАРКЕТИНГ"
+  website: "ВЕБ ДИЗАЙН"
+  consalting: "КОНСАЛТИНГ"
+  contacts: "КОНТАКТЫ"
+  about: "О НАС"
+  our-target: "Наша цель - поднять продажи клиентам"
+
+  design-page:
+    graphic-design: "ГРАФИЧЕСКИЙ ДИЗАЙН"
+    poligraphic-design: "ДИЗАЙН ПОЛИГРАФИИ"
+    poligraphic-design-text: "Наши талантливые дизайнеры быстро заполнять пустой лист бумаги новыми и яркими идеями для вашего будущего проекта"
+    web-design: "ВЕБ - ДИЗАЙН"
+    web-design-text: "Мы создаем не просто веб сайты, мы наполняем их индивидуальностью и характером"
+    service-available: "Сервис доступен для: Веб- сайтов, Целевой страницы , Блог страниц, Социальных Медиа и Онлайн Маркетинга"
+
+  creative-page:
+    creative-marketing: "КРЕАТИВНЫЙ МАРКЕТИНГ"
+    creative-marketing-text: "Пусть весь мир узнает о твоем бренде - наша команда профессиональных дизайнеров, контент редакторов, маркетинг специалистов и стратегов создадут качественную и эффективную компании для вашего бизнеса:"
+    creative-marketing-text1: "Реклама"
+    creative-marketing-text2: "Онлайн маркетинг"
+    creative-marketing-text3: "Креативный брендинг"
+
+    advertisment: "РЕКЛАМА"
+    advertisment-text1: "Графическая реклама"
+    advertisment-text2: "Печать иллюстрации"
+    advertisment-text3: "Комерционное видео/ Видео представление"
+    advertisment-text4: "Прямой маркетинг"
+    advertisment-text5: "Медиа баинг/ Размещение"
+
+    online-marketing: "ОНЛАЙН МАРКЕТИНГ"
+    online-marketing-text1: "Социальные сети"
+    online-marketing-text2: "Создание и ведение корпоративного блога"
+    online-marketing-text3: "Email маркетинг"
+    online-marketing-text4: "Реклама онлайн"
+    online-marketing-text5: "Целевая страница"
+    online-marketing-text6: "Поисковая оптимизация ( SEO)"
+
+    branding: "КРЕАТИВНЫЙ БРЕНДИНГ"
+    branding-text1: "Фирменный стиль"
+    branding-text2: "Программа лояльности"
+    branding-text3: "Потребительский опыт"
+    branding-text4: "Сервис доставки сообщений/ Написание качественного контента"
+
+  website-page:
+    web-design: "ВЕБ ДИЗАЙН"
+    web-design-text: "Наше видение нового поколения веб сайтов:"
+
+    trendy-now: "СЕГОДНЯ В ТРЕНДЕ:"
+    trendy-now-text1: "Простой и плоский дизайн"
+    trendy-now-text2: "Широкий бэкграунд во всю ширину страницы"
+    trendy-now-text3: "Интерактивный Контент – Медиа, Инфографика"
+    trendy-now-text4: "Визуальные Эффекты и Креативная Графика"
+
+    old-school1: "«Старая школа»"
+    old-school2: "Которая все еще эффективна"
+    old-school-text1: "Меньше текста"
+    old-school-text2: "Меньше второстепенных и интенсивных меню"
+    old-school-text3: "Меньше столбцов и границ"

@@ -1,0 +1,83 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  en: "En"
+  ru: "Ru"
+  design: "Graphic Design"
+  creative: "Creative Marketing"
+  website: "Web Design"
+  consalting: "Consulting"
+  contacts: "Contact"
+  about: "ABOUT US"
+  our-target: "Our ultimate goal is SELLING - help customer to increase sales"
+
+  design-page:
+    graphic-design: "Graphic Design"
+    poligraphic-design: "PRINTING DESIGNS"
+    poligraphic-design-text: "Our talented creative designers are going to fill a blank piece of paper with new and exciting ideas"
+    web-design: "WEB GRAPHIC DESIGN"
+    web-design-text: "Our young artists believe that we don’t design the website, we give the personalities and attitudes to the website,</br> and make them alive..."
+    service-available: "Service available for : Website, Landing Page, Blog Page, Social Media and Online Marketing."
+
+  creative-page:
+    creative-marketing: "Creative Marketing"
+    creative-marketing-text: "Bring your brand alive - Elite artists, designers, content editors, marketing specialists and strategists will all work together…"
+    creative-marketing-text1: "Advertisement"
+    creative-marketing-text2: "Online Marketing"
+    creative-marketing-text3: "Creative Branding"
+
+    advertisment: "ADVERTISEMENT"
+    advertisment-text1: "Ads Graphic"
+    advertisment-text2: "Print Illustration"
+    advertisment-text3: "Video intro / commercial"
+    advertisment-text4: "Direct Marketing"
+    advertisment-text5: "Media Buying & Placement"
+
+    online-marketing: "ONLINE MARKETING"
+    online-marketing-text1: "Social Media"
+    online-marketing-text2: "Blogs"
+    online-marketing-text3: "Email Campaign"
+    online-marketing-text4: "Online Paid Ads"
+    online-marketing-text5: "Landing Page"
+    online-marketing-text6: "Search Engine Optimization (SEO)"
+
+    branding: "CREATIVE BRANDING"
+    branding-text1: "Corporate Identity"
+    branding-text2: "Loyalty Program"
+    branding-text3: "Customer Experiences"
+    branding-text4: "Message Creation / Content Editing"
+
+  website-page:
+    web-design: "Web Design"
+    web-design-text: "How we think the new generation website looks like:"
+
+    trendy-now: "TRENDY NOW:"
+    trendy-now-text1: "Simple and Flat"
+    trendy-now-text2: "Full Screen Background"
+    trendy-now-text3: "Interactive Content - Media, Infographic"
+    trendy-now-text4: "Visual Effects and Creative Graphics"
+
+    old-school1: "‘OLD SCHOOL’"
+    old-school2: "BUT STILL WORKING:"
+    old-school-text1: "Less Text Content"
+    old-school-text2: "Less Secondary and Extensive Menus"
+    old-school-text3: "Less Columns and Boarders"

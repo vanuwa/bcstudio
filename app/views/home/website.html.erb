@@ -1,0 +1,335 @@
+
+<div id="homepage_header">
+  <div class="locale-block">
+    <%= link_to t(:ru), {:locale=>'ru'}, :class => I18n.locale.to_s == 'ru' ? 'active' : '' %>
+    <%= link_to t(:en), {:locale=>'en'}, :class => I18n.locale.to_s == 'en' ? 'active' : '' %>
+  </div>
+  <div class="homepage_background otherpage_background "></div>
+  <a href=<%= root_path %>><div id="logo"></div></a>
+  <div class="container otherpage_background_fix ">
+
+
+    <!-- Logo -->
+    <!--<div id="logoText">-->
+    <!--<h1><a href=<%= root_path %>>BC Studio</a></h1>-->
+    <!--</div>-->
+
+    <!-- Nav -->
+    <!--<nav id="nav">-->
+    <!--<ul>-->
+    <!--&lt;!&ndash; <li class="active"><a href="index.html">Homepage</a></li> &ndash;&gt;-->
+    <!--<li><%#= link_to "Graphic Design", home_design_path%></li>-->
+    <!--<li><%#= link_to "MKT Creatives", home_creatives_path%></li>-->
+    <!--<li class="active"><%#= link_to "Website", home_website_path%></li>-->
+    <!--<li><%#= link_to "Consultant", home_consultant_path%></li>-->
+    <!--<li><%#= link_to "Contact", contacts_path%></li>-->
+    <!--</ul>-->
+    <!--</nav>-->
+  </div>
+</div>
+<nav id="navGorizontal">
+  <ul>
+    <!-- <li class="active"><a href="index.html">Homepage</a></li> -->
+    <li><%= link_to t('design'), home_design_path%></li>
+    <li><%= link_to t('creative'), home_creatives_path%></li>
+    <li class="active"><%= link_to t('website'), home_website_path%></li>
+    <li><%= link_to t('consalting'), home_consultant_path%></li>
+    <li><%= link_to t('contacts'), contacts_path%></li>
+  </ul>
+</nav>
+
+<div class="container-fluid padding-top-sm" id="about">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 padding-top">
+      <!--<h1 class="chain chain-website"></h1>-->
+      <p><%= t('website-page.web-design-text') %></p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid padding-bottom-75">
+  <div class="row">
+
+    <div class="col-md-8 section-web-1 responsive-column websiteDim1 pull-right-sm">
+      <!--<div class="logo-2 wp2"></div>-->
+    </div>
+
+    <div class="col-md-4 responsive-column-text pull-left-sm">
+      <div class="wp5">
+        <h2 class="website-1"><%= t('website-page.trendy-now') %></h2>
+        <div class="text-list-for-website-1">
+	        <ul>
+	          <li><%= t('website-page.trendy-now-text1') %></li>
+	          <li><%= t('website-page.trendy-now-text2') %></li>
+	          <li>Over Sized Media Banner</li>
+	          <li><%= t('website-page.trendy-now-text3') %></li>
+	          <li><%= t('website-page.trendy-now-text4') %></li>
+	        </ul>
+
+	        <div class="thin-sep"></div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 section-web-2 responsive-column websiteDim2">
+      <!--<div class="logo-1 wp1"></div>-->
+    </div>
+    <div class="col-md-4 responsive-column-text">
+
+      <div class="wp4 ">
+        <h2 class="website-2">TRENDY + :</h2>
+        <div class="text-list-for-website-2">
+          <ul>
+            <li>Tablets and Smart Phone Friendly</li>
+            <li>Touch Screen Feature Friendly - Big Buttons</li>
+            <li>Real model image instead of only product image</li>
+          </ul>
+          <div class="thin-sep"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8 section-web-3 responsive-column websiteDim3 pull-right-sm">
+      <!--<div class="logo-2 wp2"></div>-->
+    </div>
+
+    <div class="col-md-4 responsive-column-text  pull-left-sm">
+      <div class="wp5">
+        <h2 class="website-3"><%= t('website-page.old-school1') %></br> <%= t('website-page.old-school2') %></h2>
+        <div class="text-list-for-website-3">
+          <ul>
+            <li><%= t('website-page.old-school-text1') %></li>
+            <li><%= t('website-page.old-school-text2') %></li>
+            <li><%= t('website-page.old-school-text3') %></li>
+          </ul>
+          <div class="thin-sep"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="wrapper">
+  <div class="container-fluid padding-bottom-75 websites">
+    <div class="inner">
+      <div class="websites-container" >
+        <div class="websites-block">
+          <div class="websites-image image1">
+            <%= image_tag 'website/websites1.png' %>
+          </div>
+          <a href="http://goldmanventure.com/" target="_blank" class="websites-link">
+            <div class="link1">www.goldmanventure.com</div>
+          </a>
+        </div>
+        
+        <div class="websites-block">
+          <div class="websites-image image2">
+            <%= image_tag 'website/websites3.png' %>
+          </div>
+          <a href="http://gmmo.biz/" target="_blank" class="websites-link">
+            <div class="link2">www.gmmo.biz</div>
+          </a>
+        </div>
+
+        <div class="websites-block">
+          <div class="websites-image image3">
+            <%= image_tag 'website/websites4.png' %>
+          </div>
+          <a href="http://cafesting.no/" target="_blank" class="websites-link">
+            <div class="link3">www.cafesting.no</div>
+          </a>
+        </div>
+
+        <div class="websites-block">
+          <div class="websites-image image4">
+            <%= image_tag 'website/websites2.png' %>
+          </div>
+          <a href="http://www.abouttime.no/" target="_blank" class="websites-link">
+            <div class="link4">www.abouttime.no</div>
+          </a>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="dontclick-fly pointer"  onclick="location.assign('<%= bonus_path %>');"></div>
+</div>
+
+
+<script>
+  window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+      fly();
+      console.log('show');
+    } else {
+      flyReset();
+      console.log('hide');
+
+    }
+  };
+  function fly() {
+    var flyDiv = $('.dontclick-fly');
+    $('.dontclick-fly').show();
+    $('.dontclick-fly').animate({
+      left: '23%',
+      bottom: '200px'
+    }, 2500, 'linear').animate({
+      left: '48%',
+      bottom: '100px'
+    }, 2500, 'linear').animate({
+      left: '90%',
+      bottom: '50px'
+    }, 2500, 'linear', function() {
+      $('.dontclick-fly').stop(true, true);
+    });
+  }
+
+  function flyReset() {
+    var flyDiv = $('.dontclick-fly');
+    $('.dontclick-fly').hide();
+    $('.dontclick-fly').stop(true, true);
+    $('.dontclick-fly').css({
+      left: '0',
+      bottom: '0'
+    });
+  }
+  
+</script>
+
+
+<!--<div class="website-block">-->
+  <!--<div class="content-block">-->
+    <!--<div class="row">-->
+      <!--<div class="col-sm-5 col-md-5 website-text-left">-->
+        <!--<h4><a href="https://intense-brook-3856.herokuapp.com/">Miracle Back Brace</a></h4>-->
+        <!--<p>If you suffer from Lower Back Pain the Miracle Back Brace my greatly improve your life by letting you go throughout the daily activities with little or no pain.Miracle Back Brace is a new patented back brace that is incredibly effective</p>-->
+      <!--</div>-->
+      <!--<div class="box col-sm-7 col-md-7 nopadding">-->
+        <!--<%=image_tag('website/image-6.png', class: "one-column") %>-->
+        <!--<div class="overlay">-->
+            <!--<span class="overlay-content">-->
+                <!--<a href="https://intense-brook-3856.herokuapp.com" class="button">Go to site</a>-->
+            <!--</span>-->
+
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row ">-->
+      <!--<div class="box col-sm-7 col-md-7 nopadding">-->
+        <!--<%=image_tag('website/image-7.png', class: "one-column") %>-->
+        <!--<div class="overlay">-->
+                        <!--<span class="overlay-content">-->
+                            <!--<a href="http://dev.bullcentury.com" class="button">Go to site</a>-->
+                        <!--</span>-->
+
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--<div class="col-sm-5 col-md-5 website-text-right">-->
+        <!--<h4><a href="http://dev.bullcentury.com">BullCentury - Crowdfunding</a></h4>-->
+        <!--<p>Crowdfunding (alternately crowd financing, equity crowdfunding, crowd-sourced fundraising) is the collective effort of individuals who network and pool their money, usually via the Internet, to support efforts initiated by other people or organizations.</p>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<div class="col-sm-5 col-md-5 website-text-left">-->
+        <!--<h4><a href="https://intense-brook-3856.herokuapp.com/">Miracle Back Brace</a></h4>-->
+        <!--<p>If you suffer from Lower Back Pain the Miracle Back Brace my greatly improve your life by letting you go throughout the daily activities with little or no pain.Miracle Back Brace is a new patented back brace that is incredibly effective</p>-->
+      <!--</div>-->
+      <!--<div class="box col-sm-7 col-md-7 nopadding">-->
+        <!--<%=image_tag('website/image-8.png', class: "one-column") %>-->
+        <!--<div class="overlay">-->
+                        <!--<span class="overlay-content">-->
+                            <!--<a href="https://intense-brook-3856.herokuapp.com" class="button">Go to site</a>-->
+                        <!--</span>-->
+
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row ">-->
+      <!--<div class="box col-sm-7 col-md-7 nopadding">-->
+        <!--<%=image_tag('website/image-1.png', class: "one-column") %>-->
+        <!--<div class="overlay">-->
+					<!--<span class="overlay-content">-->
+						<!--<a href="http://dev.bullcentury.com" class="button">Go to site</a>-->
+					<!--</span>-->
+
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--<div class="col-sm-5 col-md-5 website-text-right">-->
+        <!--<h4><a href="http://dev.bullcentury.com">BullCentury - Crowdfunding</a></h4>-->
+        <!--<p>Crowdfunding (alternately crowd financing, equity crowdfunding, crowd-sourced fundraising) is the collective effort of individuals who network and pool their money, usually via the Internet, to support efforts initiated by other people or organizations.</p>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<div class="col-sm-5 col-md-5 website-text-left">-->
+        <!--<h4><a href="https://intense-brook-3856.herokuapp.com/">Miracle Back Brace</a></h4>-->
+        <!--<p>If you suffer from Lower Back Pain the Miracle Back Brace my greatly improve your life by letting you go throughout the daily activities with little or no pain.Miracle Back Brace is a new patented back brace that is incredibly effective</p>-->
+      <!--</div>-->
+      <!--<div class="box col-sm-7 col-md-7 nopadding">-->
+        <!--<%=image_tag('website/image-2.png', class: "one-column") %>-->
+        <!--<div class="overlay">-->
+					<!--<span class="overlay-content">-->
+						<!--<a href="https://intense-brook-3856.herokuapp.com" class="button">Go to site</a>-->
+					<!--</span>-->
+
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row ">-->
+      <!--<div class="box col-sm-7 col-md-7 nopadding">-->
+        <!--<%=image_tag('website/image-3.png', class: "one-column") %>-->
+        <!--<div class="overlay">-->
+					<!--<span class="overlay-content">-->
+						<!--<a href="http://dev.bullcentury.com" class="button">Go to site</a>-->
+					<!--</span>-->
+
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--<div class="col-sm-5 col-md-5 website-text-right">-->
+        <!--<h4><a href="http://dev.bullcentury.com">BullCentury - Crowdfunding</a></h4>-->
+        <!--<p>Crowdfunding (alternately crowd financing, equity crowdfunding, crowd-sourced fundraising) is the collective effort of individuals who network and pool their money, usually via the Internet, to support efforts initiated by other people or organizations.</p>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<div class="col-sm-5 col-md-5 website-text-left">-->
+        <!--<h4><a href="https://intense-brook-3856.herokuapp.com/">Miracle Back Brace</a></h4>-->
+        <!--<p>If you suffer from Lower Back Pain the Miracle Back Brace my greatly improve your life by letting you go throughout the daily activities with little or no pain.Miracle Back Brace is a new patented back brace that is incredibly effective</p>-->
+      <!--</div>-->
+      <!--<div class="box col-sm-7 col-md-7 nopadding">-->
+        <!--<%=image_tag('website/image-4.png', class: "one-column") %>-->
+        <!--<div class="overlay">-->
+					<!--<span class="overlay-content">-->
+						<!--<a href="https://intense-brook-3856.herokuapp.com" class="button">Go to site</a>-->
+					<!--</span>-->
+
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row ">-->
+      <!--<div class="box col-sm-7 col-md-7 nopadding">-->
+        <!--<%=image_tag('website/image-5.png', class: "one-column") %>-->
+        <!--<div class="overlay">-->
+					<!--<span class="overlay-content">-->
+						<!--<a href="http://dev.bullcentury.com" class="button">Go to site</a>-->
+					<!--</span>-->
+
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--<div class="col-sm-5 col-md-5 website-text-right">-->
+        <!--<h4><a href="http://dev.bullcentury.com">BullCentury - Crowdfunding</a></h4>-->
+        <!--<p>Crowdfunding (alternately crowd financing, equity crowdfunding, crowd-sourced fundraising) is the collective effort of individuals who network and pool their money, usually via the Internet, to support efforts initiated by other people or organizations.</p>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
+<!--</div>-->

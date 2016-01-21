@@ -1,0 +1,195 @@
+
+<div id="homepage_header">
+  <div class="locale-block">
+    <%= link_to t(:ru), {:locale=>'ru'}, :class => I18n.locale.to_s == 'ru' ? 'active' : '' %>
+    <%= link_to t(:en), {:locale=>'en'}, :class => I18n.locale.to_s == 'en' ? 'active' : '' %>
+  </div>
+  <div class="homepage_background otherpage_background "></div>
+  <a href=<%= root_path %>><div id="logo"></div></a>
+  <div class="container otherpage_background_fix ">
+
+  <!-- Logo -->
+    <!--<div id="logoText">-->
+      <!--<h1><a href=<%= root_path %>>BC Studio</a></h1>-->
+    <!--</div>-->
+  
+  <!-- Nav -->
+    <!--<nav id="nav">-->
+      <!--<ul>-->
+        <!--&lt;!&ndash; <li class="active"><a href="index.html">Homepage</a></li> &ndash;&gt;-->
+        <!--<li><%#= link_to "Graphic Design", home_design_path%></li>-->
+		<!--<li><%#= link_to "MKT Creatives", home_creatives_path%></li>-->
+        <!--<li><%#= link_to "Website", home_website_path%></li>-->
+        <!--<li class="active"><%#= link_to "Consultant", home_consultant_path%></li>-->
+        <!--<li><%#= link_to "Contact", contacts_path%></li>-->
+      <!--</ul>-->
+    <!--</nav>-->
+  </div>
+</div>
+<nav id="navGorizontal">
+  <ul>
+    <!-- <li class="active"><a href="index.html">Homepage</a></li> -->
+    <li><%= link_to t('design'), home_design_path%></li>
+    <li><%= link_to t('creative'), home_creatives_path%></li>
+    <li><%= link_to t('website'), home_website_path%></li>
+    <li class="active"><%= link_to t('consalting'), home_consultant_path%></li>
+    <li><%= link_to t('contacts'), contacts_path%></li>
+  </ul>
+</nav>
+
+<div class="container-fluid intro" id="about">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 class="cons-1">CONSULTANT <span>Powered by</span> 
+        <a href="http://goldmanventure.com" >
+          <%= image_tag 'main/goldman.png', width: '162', height: '61', class:'wp12' %>
+        </a>
+      </h1>
+      <p class="text-intro">Delivering affordable quality-service for new start-up businesses:</p>
+      <p class="text-intro">Capital, Strategy, Finance, Marketing and Legal</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 section-1-cons nopadding" id="work">
+				<div class="logo-cons-1 wp1"></div>
+			</div>
+			<div class="col-md-4 section-text nopadding text-cons-1">
+				<div class="wp4">
+					<h2 class="cons-2">Fund Raising</h2>
+				    <div class="fundraising-text">
+				      <p>For qualified project, we will: </p>
+				      <ul class="text-list-for-cons-fund1">
+				        <li>Invest directly in you and contain project into our current portfolio</li>
+				        <li>Incubate your start up and help you to grow</li>
+				        <li>Provide support for: Talents, Mentors, Marketing & Sales, Business & Financial Strategy, Legal and Office Space</li>
+				      </ul></br>
+				      <p>For project beyond of our portfolio coverage, we will: </p>
+				      <ul class="text-list-for-cons-fund2">
+				        <li>Professionally prepare your project for meeting other VC or Angel demands</li>
+				        <li>Create or consult the business plan, financial modeling, marketing, supportive research and sourcing</li>
+				        <li>Advise you on term sheet details</li>
+				      </ul>
+				    </div>
+
+					<div class="thin-sep"></div>
+				</div>
+				<div class="small-featured-img section-small-1-cons">
+					<div class="arrow"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+          <div class="col-md-4 section-text nopadding">
+            <div class="wp5">
+              <h2 class="cons-3">Marketing Strategy</h2>
+              <ul class="text-list-for-cons-mktstrategy">
+                <li>Marketing Strategy and Planning</li>
+                <li>Marketing Research and Auditing</li>
+                <li>Search Engine Marketing (SEO & PPC)</li>
+                <li>Social Media Marketing (SMM)</li>
+                <li>Media Marketing</li>
+                <li>Creative Design</li>
+              </ul>
+              <div class="thin-sep"></div>
+            </div>
+            <div class="small-featured-img section-small-2-cons">
+              <div class="arrow"></div>
+            </div>
+          </div>
+          <div class="col-md-8 section-2-cons nopadding">
+            <div class="logo-cons-2 wp2"></div>
+          </div>
+			<!--<div class="col-md-12 section-1-big nopadding">-->
+			<!--</div>-->
+		</div>
+		<div class="row">
+		    <div class="col-md-8 section-3-cons nopadding" id="work">
+		      <div class="logo-cons-3 wp10"></div>
+		    </div>
+		    <div class="col-md-4 section-text nopadding">
+		      <div class="wp7">
+		        <h2 class="cons-4">Finance</h2>
+		        <ul class="text-list-for-cons-finance">
+		          <li>Financial Projection</li>
+		          <li>Financial Modeling</li>
+		          <li>Competitive Analysis</li>
+		          <li>Sales Growth</li>
+		          <li>Valuation</li>
+		        </ul>
+		        <div class="thin-sep"></div>
+		      </div>
+		      <div class="small-featured-img section-small-4-cons">
+		        <div class="arrow"></div>
+		      </div>
+		    </div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 section-3">
+				<div class="logo-cons-4 wp3"></div>
+			</div>
+			<div class="col-md-4 section-text nopadding">
+				<div class="wp6">
+					<h2 class="scales">Legal</h2>
+					<ul class="text-list-for-cons-legal">
+					    <li>Trade Mark and Patent Protection</li>
+					    <li>Share Holders Structure</li>
+					    <li>Company Registration</li>
+					    <li>Licensing</li>
+					</ul>
+					<div class="thin-sep"></div>
+				</div>
+				<div class="small-featured-img section-small-3-cons">
+					<div class="arrow"></div>
+				    <div class="logo-cons-5 wp9"></div>
+				</div>
+			</div>
+			<div class="col-md-4 section-4-cons">
+			  <div class="logo-cons-6 wp8"></div>
+			</div>
+		</div>
+	</div>
+  <div class="dontclick-fly pointer"  onclick="location.assign('<%= bonus_path %>');"></div>
+</div>
+<script>
+  window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+      fly();
+      console.log('show');
+    } else {
+      flyReset();
+      console.log('hide');
+
+    }
+  };
+  function fly() {
+    var flyDiv = $('.dontclick-fly');
+    $('.dontclick-fly').show();
+    $('.dontclick-fly').animate({
+      left: '23%',
+      bottom: '200px'
+    }, 2500, 'linear').animate({
+      left: '48%',
+      bottom: '100px'
+    }, 2500, 'linear').animate({
+      left: '90%',
+      bottom: '50px'
+    }, 2500, 'linear', function() {
+      $('.dontclick-fly').stop(true, true);
+    });
+  }
+
+  function flyReset() {
+    var flyDiv = $('.dontclick-fly');
+    $('.dontclick-fly').hide();
+    $('.dontclick-fly').stop(true, true);
+    $('.dontclick-fly').css({
+      left: '0',
+      bottom: '0'
+    });
+  }
+  
+</script>
