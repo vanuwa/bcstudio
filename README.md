@@ -1,2 +1,2 @@
 # bcstudio
-Site of web studio
+Improvement of company site
